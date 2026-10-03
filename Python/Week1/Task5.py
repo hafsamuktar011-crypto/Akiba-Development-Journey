@@ -10,9 +10,12 @@ print("==================================" )
 print("             RECEIPT   ") 
 print("==================================")
 print("customer: ", custoer_name)
-print("Product   ,     Price       ,  Qty")
+
+print(f"{'Product':<15}    {'Price':>10}  {'Qty':>5}")
 print("-----------------------------------")
-print(product_name ,   price,   quantity)
+
+print(f"{product_name:<15} {price:>10} {quantity:>5}")
+ 
 print("Total",totalPrice)
 print("Thank you for shopping!")
 print("========================")
