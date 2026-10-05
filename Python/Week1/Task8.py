@@ -7,6 +7,7 @@ sumOfScore=python_score + english_score + mathematics_score
 
 average=float(sumOfScore / 3)
 
+
 print("========================================")
 print("              STUDENT RESULT           ")
 print("========================================")
