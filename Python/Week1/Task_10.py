@@ -6,7 +6,7 @@ height=float(input("Enter your height "))
 
 height_square=height**2
 
-bmi=weight % height_square
+bmi=weight / height_square
 print("================================")
 print("          BMI REPORT            ")
 print("================================")
