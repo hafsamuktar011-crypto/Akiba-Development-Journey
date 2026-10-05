@@ -52,7 +52,7 @@ Topics and practice include:
 - Basic data structures
 - Programming exercises
 
-👉 [Explore Python](./Python/README.md)
+👉 [Explore Python — Week 1](./Python/Week1/README.md)
 
 ---
 
