@@ -12,4 +12,5 @@
 # 6. How many numbers are odd
 # Important
 # Try to solve this using one main loop.
-# Do not cr
+# Do not crcreate separate loops for every calculation unless you have a good
+# reason.
