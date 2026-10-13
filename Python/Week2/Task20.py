@@ -18,3 +18,8 @@
 Total=0
 evenNumber=0
 oddNumber=0
+for i in range(10):
+    number = int(input("Enter a number: "))
+    largestNumber=number > i
+    smallestNumber=number < i
+    print(largestNumber)
