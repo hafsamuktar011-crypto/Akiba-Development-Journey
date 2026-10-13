@@ -1,0 +1,15 @@
+# NUMBER ANALYZER
+# 
+# 
+# Problem
+# Create a program that asks the user to enter 10 numbers.
+# The program should analyze the numbers and display:
+# 1. The largest number
+# 2. The smallest number
+# 3. The total sum
+# 4. The average
+# 5. How many numbers are even
+# 6. How many numbers are odd
+# Important
+# Try to solve this using one main loop.
+# Do not cr
