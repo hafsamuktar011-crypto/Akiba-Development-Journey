@@ -14,3 +14,7 @@
 # Try to solve this using one main loop.
 # Do not crcreate separate loops for every calculation unless you have a good
 # reason.
+
+Total=0
+evenNumber=0
+oddNumber=0
