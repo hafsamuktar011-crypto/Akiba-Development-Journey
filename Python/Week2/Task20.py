@@ -20,10 +20,12 @@ evenNumber=0
 oddNumber=0
 for i in range(10):
     number = int(input("Enter a number: "))
-    smallestNumber=0
 
     if i == 0:
      largestNumber=number
     elif largestNumber < number:
+           largestNumbert=number
+
+       
         
 
