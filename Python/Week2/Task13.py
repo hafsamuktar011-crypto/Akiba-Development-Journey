@@ -5,3 +5,4 @@ if number <= 1:
     print("Not Prime")
 else:
     print("prime")
+   
