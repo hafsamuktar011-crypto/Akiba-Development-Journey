@@ -4,4 +4,11 @@
 # Print the report
 
 def getScores():
-    score=float(input("Enter score: "))
+    scores=[]
+    for i in range(5):
+     score=float(input("Enter score: "))
+
+     scores.append(score)
+    return scores
+
+print(getScores())
