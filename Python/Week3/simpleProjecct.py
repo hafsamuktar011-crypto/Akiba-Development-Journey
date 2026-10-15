@@ -11,4 +11,15 @@ def getScores():
      scores.append(score)
     return scores
 
-print(getScores())
+
+
+def calculateAverage(scores):
+   sumofScore=0
+   for i in scores:
+      sumofScore+=i
+      return sumofScore/len(scores)
+
+scores=getScores()
+print("scores: ",scores)
+
+print(calculateAverage(scores))
