@@ -18,8 +18,24 @@ def calculateAverage(scores):
    for i in scores:
       sumofScore+=i
       return sumofScore/len(scores)
+def checkPassFail(average):
+   if average >= 5:
+    return "pass"   
+   else:
+      return "fail"
+
+def print_report(scores, average, result):
+    print("\nReport")
+    print("Scores:", scores)
+    print("Average:", average)
+    print("Result:", result)
 
 scores=getScores()
+average=calculateAverage(scores)
+result=checkPassFail(average)
+
 print("scores: ",scores)
 
-print(calculateAverage(scores))
+print(average)
+print(result)
+print(scores,average,result)
