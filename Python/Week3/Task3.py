@@ -18,7 +18,7 @@ def is_prime(number):
             
     return "prime"
         
-print("the number is :",is_prime(number))
+# print("the number is :",is_prime(number))
 
 def get_divisors(number):
     # handle negative numbers
@@ -31,7 +31,7 @@ def get_divisors(number):
             divisors.append(i)
     
     return divisors
-print(f"the divisor of {number} is :",get_divisors(number))
+# print(f"the divisor of {number} is :",get_divisors(number))
 
 def sum_of_digits(number):
     # handle negative numbers
@@ -46,17 +46,35 @@ def sum_of_digits(number):
 
     return total
 
-print(f"the sum of {number}is: " ,sum_of_digits(number))
+# print(f"the sum of {number} is: " ,sum_of_digits(number))
         
 def reverse_number(number):
-      reverse=[]
+      
+      reversedNum=0
+      while number > 0:
+          lastDigit=number % 10       
 
-      for i in range(number):
-          lastDigit=i % 10
-          reverse.append(lastDigit)
-      return reverse
+        # shift the digits and add the last digit
+          reversedNum=reversedNum *10 +lastDigit   
 
-print(reverse_number(number))       
+      # remove the last digit from the original number
+          number=number // 10     
+
+      return reversedNum                      
+
+# print(f"the resversed number of {number} is ",reverse_number(number))       
 
 def analyze_number(number):
-    return 
+    return {
+        "The number is prime": is_prime(number),
+        f"The sum of digits of {number} is": sum_of_digits(number),
+        f"The divisors of {number} are": get_divisors(number),
+        f"The reversed number of {number} is": reverse_number(number)
+    }
+
+
+
+print(is_prime(number))
+print(analyze_number(number))
+print(sum_of_digits(number))
+print(get_divisors(number))
