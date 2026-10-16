@@ -18,6 +18,7 @@ def calculateAverage(scores):
    for i in scores:
       sumofScore+=i
       return sumofScore/len(scores)
+   
 def checkPassFail(average):
    if average >= 5:
     return "pass"   

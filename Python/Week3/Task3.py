@@ -21,6 +21,7 @@ def is_prime(number):
 print("the number is :",is_prime(number))
 
 def get_divisors(number):
+    # handle negative numbers
     if number == 0 or number < 0:
         raise ValueError("can't be 0")
     divisors=[]
@@ -33,7 +34,7 @@ def get_divisors(number):
 print(f"the divisor of {number} is :",get_divisors(number))
 
 def sum_of_digits(number):
-    # Handle negative numbers
+    # handle negative numbers
     if number < 0:
         number = -number
 
@@ -47,3 +48,15 @@ def sum_of_digits(number):
 
 print(f"the sum of {number}is: " ,sum_of_digits(number))
         
+def reverse_number(number):
+      reverse=[]
+
+      for i in range(number):
+          lastDigit=i % 10
+          reverse.append(lastDigit)
+      return reverse
+
+print(reverse_number(number))       
+
+def analyze_number(number):
+    return 
