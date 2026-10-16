@@ -7,14 +7,15 @@
 # analyze_number(number) — return a complete analysis.
 
 number=int(input("enter number: "))
+
 def is_prime(number):
-    if number <=1:
-        raise ValueError(
+    if number <= 1:
+        return(
             "number can't be less than one"
         )
     for i in range(2,number):
         if number % i  == 0:
-            return"not prime"
+            return "not prime"
             
     return "prime"
         
@@ -23,7 +24,8 @@ def is_prime(number):
 def get_divisors(number):
     # handle negative numbers
     if number == 0 or number < 0:
-        raise ValueError("can't be 0")
+        return "divisors are undefined for zero"
+    
     divisors=[]
 
     for i in range(1,number + 1):
@@ -40,7 +42,8 @@ def sum_of_digits(number):
 
     total = 0
     while number > 0:
-        digit = number % 10   
+
+        digit = number % 10    
         total += digit        
         number = number // 10 
 
@@ -55,7 +58,7 @@ def reverse_number(number):
           lastDigit=number % 10       
 
         # shift the digits and add the last digit
-          reversedNum=reversedNum *10 +lastDigit   
+          reversedNum=reversedNum *10 +lastDigit     
 
       # remove the last digit from the original number
           number=number // 10     
@@ -65,16 +68,18 @@ def reverse_number(number):
 # print(f"the resversed number of {number} is ",reverse_number(number))       
 
 def analyze_number(number):
+    if number % 2 == 0:
+        parity = "even"
+    else:
+        parity = "odd"
     return {
-        "The number is prime": is_prime(number),
+         "number": number,
+        "even or odd": parity,
+        "prime": is_prime(number),
+    
         f"The sum of digits of {number} is": sum_of_digits(number),
         f"The divisors of {number} are": get_divisors(number),
         f"The reversed number of {number} is": reverse_number(number)
     }
 
-
-
-print(is_prime(number))
 print(analyze_number(number))
-print(sum_of_digits(number))
-print(get_divisors(number))
