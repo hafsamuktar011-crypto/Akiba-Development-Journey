@@ -43,4 +43,4 @@ def getGrade(score):
             return "C"
         elif score>=  60 and score <= 69:
             return "D"
-print(getGrade(78)) 
+print(getGrade(37)) 
