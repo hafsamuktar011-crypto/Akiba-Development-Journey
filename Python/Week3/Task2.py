@@ -32,19 +32,15 @@ def getScore(students):
 
 getScore(students)
 
-def getGrade(students):
-    for student in students:
-
-        score = student["score"]
-
-    if score < 60:
-        return "F"
-    elif score >= 90:
-        return "A"
-    elif score>=  80 & score <= 89:
-        return "B"
-    elif score>=  70 & score <= 79:
-        return "C"
-    elif score>=  60 & score <= 69:
-        return "D"
-print(getGrade(students)) 
+def getGrade(score):
+        if score < 60:
+            return "F"
+        elif score >= 90:
+            return "A"
+        elif score>=  80 and score <= 89:
+            return "B"
+        elif score>=  70 and score <= 79:
+            return "C"
+        elif score>=  60 and score <= 69:
+            return "D"
+print(getGrade(78)) 
