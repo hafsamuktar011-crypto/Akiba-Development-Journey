@@ -42,3 +42,16 @@ def getGrade(score):
         elif score>=  60 and score <= 69:
             return "D"
 print(getGrade(37)) 
+
+def calculatAverage(students):
+     total=0
+     for student in students:
+          total += student["score"]
+     if len(students) == 0:
+          return 0
+     else:
+          return total/len(students) 
+     
+calculatAverage(students)
+
+print(calculatAverage(students))
