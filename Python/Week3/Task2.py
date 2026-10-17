@@ -24,13 +24,11 @@ students = [
     {"name": "Hana", "score": 67}
 ]
 
+def getScore(student):
+    score = student["score"]
+    print(score)
 
-def getScore(students):
-    for student in students:
-        score = student["score"]
-        print(score)
-
-getScore(students)
+getScore(students[0])
 
 def getGrade(score):
         if score < 60:
