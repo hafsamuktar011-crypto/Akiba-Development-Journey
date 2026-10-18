@@ -24,6 +24,14 @@ students = [
     {"name": "Hana", "score": 67}
 ]
 
+
+def validateScore(score):
+    if score >= 0 and score <= 100:
+        return True
+    else:
+        return False
+
+
 def getScore(student):
     score = student["score"]
     print(score)
@@ -90,3 +98,35 @@ def countPassedFailed(students):
      return "failed",failed,"passed",passed
           
 print(countPassedFailed(students))
+
+
+def generateReport(students):
+    print("\n===== STUDENT PERFORMANCE REPORT =====")
+
+    for student in students:
+        name = student["name"]
+        score = student["score"]
+
+        if validateScore(score):
+            grade = getGrade(score)
+            result = "Pass" if score >= 50 else "Fail"
+
+            print(f"Name: {name}")
+            print(f"Score: {score}")
+            print(f"Grade: {grade}")
+            print(f"Result: {result}")
+            print("-" * 30)
+        else:
+            print(f"Name: {name}")
+            print(f"Invalid score: {score}")
+            print("-" * 30)
+
+    print(f"Class Average: {calculatAverage(students):.2f}")
+    print(f"Highest Score: {findHighestScore(students)}")
+    print(f"Lowest Score: {findLowestScore(students)}")
+
+    results = countPassedFailed(students)
+
+    print(f"Passed Students: {results['passed']}")
+    print(f"Failed Students: {results['failed']}")
+
