@@ -55,3 +55,12 @@ def calculatAverage(students):
 calculatAverage(students)
 
 print(calculatAverage(students))
+
+def findHighestScore(students):
+     if len(students)==0:
+          return None
+     
+     highest=students[0]["score"]
+     for student in students:
+          if student["score"] >= highest:
+               highest=student["score"]
