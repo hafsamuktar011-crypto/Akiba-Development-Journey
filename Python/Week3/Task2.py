@@ -85,8 +85,8 @@ def countPassedFailed(students):
      for student in students:
           if student["score"] >= 50:
                passed += 1
-               return "pass",passed
           else:
                failed += 1
-               return "failed",failed
+     return "failed",failed,"passed",passed
+          
 print(countPassedFailed(students))
