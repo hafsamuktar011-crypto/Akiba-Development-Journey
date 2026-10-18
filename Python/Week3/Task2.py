@@ -41,7 +41,7 @@ def getGrade(score):
             return "C"
         elif score>=  60 and score <= 69:
             return "D"
-print(getGrade(37)) 
+print(f"the score of {37} ",getGrade(37)) 
 
 def calculatAverage(students):
      total=0
@@ -77,4 +77,14 @@ def findLowestScore(students):
                lowest=student["score"]
                return lowest
 
-print("the lowest score is ",findHighestScore(students))          
+print("the lowest score is ",findLowestScore(students))          
+
+def countPassedFailed(students):
+     failed=0
+     passed=0
+     for student in students:
+          if student["score"] >= 50:
+               passed += 1
+               return "pass",passed
+          else:
+               return "failed",failed
