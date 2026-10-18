@@ -87,4 +87,6 @@ def countPassedFailed(students):
                passed += 1
                return "pass",passed
           else:
+               failed += 1
                return "failed",failed
+print(countPassedFailed(students))
