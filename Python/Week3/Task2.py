@@ -62,5 +62,19 @@ def findHighestScore(students):
      
      highest=students[0]["score"]
      for student in students:
-          if student["score"] >= highest:
+          if student["score"] > highest:
                highest=student["score"]
+               return highest
+print("the highest score",findHighestScore(students))
+
+def findLowestScore(students):
+     if len(students)==0:
+          return None
+     
+     lowest=students[0]["score"]
+     for student in students:
+          if  student["score"] < lowest:
+               lowest=student["score"]
+               return lowest
+
+print("the lowest score is ",findHighestScore(students))          
