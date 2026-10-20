@@ -8,3 +8,12 @@
 # Identify repeated words
 
 text = "Python is useful and Python is powerful."
+
+words=text.split()
+print(words)
+def getcountWords(words):
+    countWord=len(words)
+    return countWord
+print(getcountWords(words))
+
+
