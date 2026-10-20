@@ -14,6 +14,11 @@ print(words)
 def getcountWords(words):
     countWord=len(words)
     return countWord
-print(getcountWords(words))
+print(f"the counted words are ",getcountWords(words))
 
+
+def getCharacters(text):
+    characters=len(text)
+    return characters
+print(f"the counted characters are ",getCharacters(text))
 
