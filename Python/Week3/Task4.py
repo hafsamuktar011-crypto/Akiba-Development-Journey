@@ -73,7 +73,7 @@ def getLongestWord(words):
 print("The longest word in the text is:", getLongestWord(words))
                
 
-def countRepeatedWord(words):
+def identifyRepeatedWord(words):
     if len(words) == 0:
         return "No words"
 
@@ -85,5 +85,14 @@ def countRepeatedWord(words):
 
     return repeatedWords
 
-print("The repeated words are:", countRepeatedWord(words))
+print("The repeated words are:", identifyRepeatedWord(words))
 
+def countRepeatedword(words):
+    if len(words)== 0:
+        return "No words"
+    repeatedword=0
+    for word in words:
+        if words.count(word)>1:
+            repeatedword +=1
+    return repeatedword
+print(f"The repeated word count is ",countRepeatedword(words))        
