@@ -72,3 +72,18 @@ def getLongestWord(words):
 
 print("The longest word in the text is:", getLongestWord(words))
                
+
+def countRepeatedWord(words):
+    if len(words) == 0:
+        return "No words"
+
+    repeatedWords = []
+    
+    for word in words:
+        if words.count(word) > 1 and word not in repeatedWords:
+            repeatedWords.append(word)
+
+    return repeatedWords
+
+print("The repeated words are:", countRepeatedWord(words))
+
