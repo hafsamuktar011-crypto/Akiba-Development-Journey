@@ -23,7 +23,7 @@ student1=Student("Moxammed","22","computer science")
 student2=Student("Axmed","28","computer science") 
 student3=Student("Fatum","38","Electrical engineering") 
 
-        # display info of 3 student
+        # display info of 3 student by calling the method
 student1.display_info()        
 student2.display_info()        
 student3.display_info()        
