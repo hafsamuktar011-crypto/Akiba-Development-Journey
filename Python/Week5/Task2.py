@@ -1,0 +1,19 @@
+# Rectangle Calculator
+# Create a Rectangle class with the following requirements:
+# Initialize length and width using __init__().
+# Create an area() method to calculate the area.
+# Create a perimeter() method to calculate the perimeter.
+# Create two rectangle objects with different dimensions.
+# Display the area and perimeter of each rectangle.
+class Rectangle:
+    def __init__(self,length,width):
+        self.length=length
+        self.width=width
+    def area(self):
+        return self.length *self.width
+    def perimeter(self):
+
+# create rectangle obj
+
+rect1=Rectangle(34,2)
+rect2=Rectangle(8,3)
