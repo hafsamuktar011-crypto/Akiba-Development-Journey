@@ -14,6 +14,13 @@ class Student:
         self.school=school
         self.department=department
     def display(self):
-        return print("school:",self.school_name)
-                    ("name:",self.name)
-student1=    
+        print("school:",self.school_name)
+        print("Name:", self.name) 
+        print("Score:", self.score) 
+        print("Department:", self.department) 
+        print("--------------------")
+
+# Create three student objects 
+student1 = Student("Hafsa", 85, "Computer Science") 
+student2 = Student("Ahmed", 72, "Engineering") 
+student3 = Student("Fatum", 90, "Information Technology")   
