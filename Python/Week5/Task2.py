@@ -12,8 +12,7 @@ class Rectangle:
     def area(self):
         return self.length *self.width
     def perimeter(self):
-
-# create rectangle obj
-
-rect1=Rectangle(34,2)
+        return 2*(self.length+self.width)
+    def 
+rect1=Rectangle(4,2)
 rect2=Rectangle(8,3)
