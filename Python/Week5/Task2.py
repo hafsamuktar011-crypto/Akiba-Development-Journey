@@ -13,11 +13,22 @@ class Rectangle:
         return self.length *self.width
     def perimeter(self):
         return 2*(self.length+self.width)
+    
     def __str__(self):
          return f"Rectangle(length={self.length}, width={self.width})"
 
-rect1=Rectangle(4,2)
-rect2=Rectangle(8,3)
+# create two rectangle obj
+rectangle1=Rectangle(4,2)
+rectangle2=Rectangle(8,3)
 
-print(rect1.area())
-print(Rectangle.perimeter())
+# display rectangle dimension
+print(rectangle1)
+print(rectangle2)
+
+# display area and perimeter
+print(f"AREA of rectangle 1:",rectangle1.area())
+
+print(f"Perimeter of rectangle 1:",rectangle1.perimeter())
+
+print(f"AREA of rectangle 2:",rectangle2.area())
+print(f"Perimeter of rectangle 2:",rectangle2.perimeter())
