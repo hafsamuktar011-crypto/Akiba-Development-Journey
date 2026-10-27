@@ -43,6 +43,7 @@ def withdraw_money(account, amount):
     account["withdrawn_today"] += amount
 
     return f"Success: Withdrew ${amount:.2f}. New balance: ${account['balance']:.2f}"
+
 result2 = withdraw_money(my_account, 700.0)
 print(result2)
 
