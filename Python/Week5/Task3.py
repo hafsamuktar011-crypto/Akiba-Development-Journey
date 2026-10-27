@@ -9,4 +9,11 @@
 
 class Student:
     school_name = "Akiba Academy"
-    
+    def __init__(self,name,school,department):
+        self.name=name
+        self.school=school
+        self.department=department
+    def display(self):
+        return print("school:",self.school_name)
+                    ("name:",self.name)
+student1=    

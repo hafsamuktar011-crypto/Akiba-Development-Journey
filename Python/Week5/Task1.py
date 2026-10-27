@@ -12,9 +12,18 @@ class Student:
         self.name=name
         self.age=age
         self.department=department
+        # display method
     def display_info(self):
         print(f"Name: {self.name}")    
         print(f"Age: {self.age}")    
         print(f"Department: {self.department}")
-            
-        
+
+#  student obj creation           
+student1=Student("Moxammed","22","computer science") 
+student2=Student("Axmed","28","computer science") 
+student3=Student("Fatum","38","Electrical engineering") 
+
+        # display info of 3 student
+student1.display_info()        
+student2.display_info()        
+student3.display_info()        

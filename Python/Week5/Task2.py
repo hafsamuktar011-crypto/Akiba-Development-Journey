@@ -13,6 +13,11 @@ class Rectangle:
         return self.length *self.width
     def perimeter(self):
         return 2*(self.length+self.width)
-    def 
+    def __str__(self):
+         return f"Rectangle(length={self.length}, width={self.width})"
+
 rect1=Rectangle(4,2)
 rect2=Rectangle(8,3)
+
+print(rect1.area())
+print(Rectangle.perimeter())
