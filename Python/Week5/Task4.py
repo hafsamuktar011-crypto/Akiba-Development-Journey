@@ -16,5 +16,11 @@ class Product:
         return f"The description of the product name:{self.name} quantity:{self.quantity} price:{self.price}"
     # create product obj
 product1=Product("Brake pads","3","50$")    
-product1=Product("Shock absorber","2","150$")    
-product1=Product("Radiator","1","300$")    
+product2=Product("Shock absorber","2","150$")    
+product3=Product("Radiator","1","300$")  
+# print each price 
+print(product1) 
+print(product2) 
+print(product3) 
+# def total_value(self):
+    
