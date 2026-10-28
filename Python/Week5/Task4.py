@@ -24,4 +24,5 @@ print(product2)
 print(product3) 
 
 def total_value(self):
+    return f"the total values is ={self.price} *{self.quantity}"
     
