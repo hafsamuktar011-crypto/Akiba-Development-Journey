@@ -27,6 +27,8 @@ print(product3)
 
 # print total of each product
 print("The total price:",product1.total_value())
+print("The total price:",product2.total_value())
+print("The total price:",product3.total_value())
 
    
 
