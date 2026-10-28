@@ -13,16 +13,17 @@ class Product:
         self.price=price
         self.quantity=quantity
     def __str__(self):
-        return f"The description of the product name:{self.name} quantity:{self.quantity} price:{self.price}"
+        return f"The description of the product- name:{self.name} quantity:{self.quantity} price:{self.price}"
+    def total_value(self):
+         return self.price * self.quantity
     # create product obj
-product1=Product("Brake pads","3","50$")    
-product2=Product("Shock absorber","2","150$")    
-product3=Product("Radiator","1","300$")  
+product1=Product("Brake pads",3,50)    
+product2=Product("Shock absorber",2,150)    
+product3=Product("Radiator",1,300)  
 # print each price 
 print(product1) 
 print(product2) 
 print(product3) 
 
-def total_value(self):
-    return f"the total values is ={self.price} *{self.quantity}"
-    
+   
+
