@@ -8,13 +8,13 @@
 # Add a method called total_value() that calculates the total value using price × quantity.
 
 class Product:
-    def __init__(self,name,price,quantity):
+    def __init__(self,name,quantity,price):
         self.name=name
         self.price=price
         self.quantity=quantity
     def __str__(self):
         return f"The description of the product name:{self.name} quantity:{self.quantity} price:{self.price}"
     # create product obj
-product1=Product("Brake pads",)    
-product1=Product("Shock absorber",)    
-product1=Product("Radiator",)    
+product1=Product("Brake pads","3","50$")    
+product1=Product("Shock absorber","2","150$")    
+product1=Product("Radiator","1","300$")    
