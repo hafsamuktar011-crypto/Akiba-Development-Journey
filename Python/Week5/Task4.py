@@ -22,5 +22,6 @@ product3=Product("Radiator","1","300$")
 print(product1) 
 print(product2) 
 print(product3) 
-# def total_value(self):
+
+def total_value(self):
     
