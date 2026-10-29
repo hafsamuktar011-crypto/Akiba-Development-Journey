@@ -8,3 +8,10 @@
 # Create two bank account objects with different owners and balances.
 # Perform multiple deposits and withdrawals on each account.
 # Prevent withdrawals when the requested amount is greater than the available balance.
+class BankAccount:
+    def __init__(self,owner,balance):
+        self.owner=owner
+        self.balance=balance
+    def deposit():
+
+        
