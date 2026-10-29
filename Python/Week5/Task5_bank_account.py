@@ -12,6 +12,9 @@ class BankAccount:
     def __init__(self,owner,balance):
         self.owner=owner
         self.balance=balance
-    def deposit():
+        # increase account's balance by the amount deposited
+    def deposit(self,amount):
+     self.balance=self.balance +amount
+      
 
         
