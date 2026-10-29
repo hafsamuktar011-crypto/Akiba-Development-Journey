@@ -16,7 +16,7 @@ class BankAccount:
     def deposit(self,amount):
      self.balance=self.balance +amount
     def withdraw(self,amount):
-       if(amount>self.balance | amount<=0):
+       if(amount>self.balance or amount<=0):
           return "insufficent balance"
        else:
         self.balance=self.balance-amount
@@ -26,11 +26,13 @@ banceAccount1=BankAccount("Zidan",2000)
 banceAccount2=BankAccount("Sara",3000)
 # give the deposit amount  to banceAccount1
 banceAccount1.deposit(500)
-# pass the withdraw amount  to banceAccount1
-banceAccount1.withdraw(300)
+banceAccount2.deposit(500)
+# Withdraw money from Zidan's and sara's bank account
+print("Zidan's balance after deposit:",banceAccount1.display_balance())
+print("Sara's balance after deposit",banceAccount2.display_balance())
 
-print(banceAccount1.display_balance())
-
+print("Zidan's balance:",banceAccount1.display_balance())
+print("Sara's balance:",banceAccount2.display_balance())
        
       
 
