@@ -15,6 +15,21 @@ class BankAccount:
         # increase account's balance by the amount deposited
     def deposit(self,amount):
      self.balance=self.balance +amount
+    def withdraw(self,amount):
+       if(amount>self.balance | amount<=0):
+          return "insufficent balance"
+       else:
+        self.balance=self.balance-amount
+    def display_balance(self):
+       return self.balance
+banceAccount1=BankAccount("Zidan",2000)    
+banceAccount2=BankAccount("Sara",3000)
+# give the deposit amount  to banceAccount1
+banceAccount1.deposit(500)
+
+print(banceAccount1.display_balance())
+
+       
       
 
         
