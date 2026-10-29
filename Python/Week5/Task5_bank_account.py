@@ -26,6 +26,8 @@ banceAccount1=BankAccount("Zidan",2000)
 banceAccount2=BankAccount("Sara",3000)
 # give the deposit amount  to banceAccount1
 banceAccount1.deposit(500)
+# pass the withdraw amount  to banceAccount1
+banceAccount1.withdraw(300)
 
 print(banceAccount1.display_balance())
 
