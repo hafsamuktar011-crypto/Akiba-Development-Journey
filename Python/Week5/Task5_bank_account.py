@@ -27,12 +27,17 @@ banceAccount2=BankAccount("Sara",3000)
 # give the deposit amount  to banceAccount1
 banceAccount1.deposit(500)
 banceAccount2.deposit(500)
-# Withdraw money from Zidan's and sara's bank account
+# deposit money from Zidan's and sara's bank account
+print("================================================")
 print("Zidan's balance after deposit:",banceAccount1.display_balance())
 print("Sara's balance after deposit",banceAccount2.display_balance())
 
-print("Zidan's balance:",banceAccount1.display_balance())
-print("Sara's balance:",banceAccount2.display_balance())
+print('================================================')
+print(banceAccount1.withdraw(3000))
+banceAccount2.withdraw(200)
+print("=================================================")
+print("Zidan's final balance:",banceAccount1.display_balance())
+print("Sara's final balance:",banceAccount2.display_balance())
        
       
 
