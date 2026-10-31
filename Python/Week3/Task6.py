@@ -14,4 +14,6 @@ def addProduct(name,price,stock):
     if name == "":
         print("Error: Product name cannot be empty.")
         return
-    
+    if name in inventory:
+        print("Error: Product already exists.")
+        return
