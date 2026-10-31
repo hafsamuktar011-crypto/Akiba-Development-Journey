@@ -1,6 +1,5 @@
 # NUMBER ANALYZER
 # 
-# 
 # Problem
 # Create a program that asks the user to enter 10 numbers.
 # The program should analyze the numbers and display:
