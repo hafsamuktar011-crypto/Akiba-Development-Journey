@@ -7,3 +7,11 @@
 # Sell a product.
 # Calculate the total inventory value.
 # Generate a low-stock report.
+
+inventory = {}
+
+def addProduct(name,price,stock):
+    if name == "":
+        print("Error: Product name cannot be empty.")
+        return
+    
