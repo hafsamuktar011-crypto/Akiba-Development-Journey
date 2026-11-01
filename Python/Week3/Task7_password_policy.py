@@ -51,9 +51,17 @@ def analyzePassword(password):
                   "lowercase ":hasLowercaseCase(password),
                   "digit":hasDigits(password),
                   "special character":hasSpecialCharacter(password)
-                  }   
+                  } 
+          
+        missing=[]
         for key,value in results.items():
-            print(key,value)
+            if value is False:
+                missing.append(key)
+        return{
+                    "results":results,
+                    "missing requirements":missing
+                }
+           
 
 print(analyzePassword("hello123"))   
 print(analyzePassword("hello@1233"))   
