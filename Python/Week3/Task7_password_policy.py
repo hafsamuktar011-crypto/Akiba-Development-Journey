@@ -8,4 +8,26 @@
 # Digits.
 # Special characters.
 
-def passwordValidationSytstem():
+password=""
+# password="1234456"
+
+# default mininum length =8
+
+def minimumlength(password,minLength=8):
+     if len(password) >= minLength:
+      return True
+     return False
+
+    # def hasUppercaseCase(password):   
+    # def hasLowercaseCase(password):
+    #    def hasDigits(password):  
+    #       def hasSpecialCharacter(password): 
+
+# analyzepassword return the all of the result of the functions
+def analyzePassword(password):
+        result=  {"minium length":minimumlength(password)}   
+
+        return result   
+print(analyzePassword("hello123"))   
+print(analyzePassword("hello@1233"))   
+print(analyzePassword("hel3"))   
