@@ -8,8 +8,8 @@
 # Digits.
 # Special characters.
 
-password=""
-# password="1234456"
+
+
 
 # default mininum length =8
 
@@ -18,16 +18,43 @@ def minimumlength(password,minLength=8):
       return True
      return False
 
-    # def hasUppercaseCase(password):   
-    # def hasLowercaseCase(password):
-    #    def hasDigits(password):  
-    #       def hasSpecialCharacter(password): 
+def hasUppercaseCase(password):
+    for char in password:
+        if char.isupper():
+            return True
+    return False
+   
+def hasLowercaseCase(password):
+     for char in password:
+      if char.islower():
+          return True
+     return False
+
+def hasDigits(password):
+     for char in password: 
+      if char.isdigit():
+          return True
+     return False  
+
+# check char is a letter or number
+def hasSpecialCharacter(password):
+     for char in password:
+      if not  char.isalnum():
+          return True
+     return False 
 
 # analyzepassword return the all of the result of the functions
 def analyzePassword(password):
-        result=  {"minium length":minimumlength(password)}   
+        result=  {"minium length":minimumlength(password),
+                  "uppercase":hasUppercaseCase(password),
+                  "lowercase ":hasLowercaseCase(password),
+                  "digit":hasDigits(password),
+                  "special character":hasSpecialCharacter(password)
+                  }   
 
         return result   
 print(analyzePassword("hello123"))   
 print(analyzePassword("hello@1233"))   
-print(analyzePassword("hel3"))   
+print(analyzePassword("WERTTYY"))   
+print(analyzePassword("weQ234$21"))   
+print(analyzePassword("Helo23!@0r"))   
