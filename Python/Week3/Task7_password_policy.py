@@ -1,4 +1,5 @@
 # Password Policy and Strength Analyzer
+
 # Create a function-based password validation system.
 # Create functions to check:
 # Minimum length.
@@ -6,3 +7,5 @@
 # Lowercase letters.
 # Digits.
 # Special characters.
+
+def passwordValidationSytstem():
