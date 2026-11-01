@@ -54,6 +54,7 @@ def analyzePassword(password):
                   } 
           
         missing=[]
+        # gets dictionary key value
         for key,value in results.items():
             if value is False:
                 missing.append(key)
