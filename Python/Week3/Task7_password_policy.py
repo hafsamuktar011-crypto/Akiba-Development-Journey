@@ -45,14 +45,16 @@ def hasSpecialCharacter(password):
 
 # analyzepassword return the all of the result of the functions
 def analyzePassword(password):
-        result=  {"minium length":minimumlength(password),
+        
+        results=  {"minium length":minimumlength(password),
                   "uppercase":hasUppercaseCase(password),
                   "lowercase ":hasLowercaseCase(password),
                   "digit":hasDigits(password),
                   "special character":hasSpecialCharacter(password)
                   }   
+        for key,value in results.items():
+            print(key,value)
 
-        return result   
 print(analyzePassword("hello123"))   
 print(analyzePassword("hello@1233"))   
 print(analyzePassword("WERTTYY"))   
