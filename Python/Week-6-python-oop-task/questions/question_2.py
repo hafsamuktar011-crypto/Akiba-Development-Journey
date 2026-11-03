@@ -9,5 +9,11 @@
 class BankAccount:
     def __init__(self,account_holder,balance):
         self.account_holder=account_holder
-        self.balance=balance
+        self.__balance=balance
+
+    def deposit(amount):
         
+
+account1 = BankAccount("Musa", 5000)
+
+print(account1)
