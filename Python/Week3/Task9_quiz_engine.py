@@ -22,11 +22,10 @@ def displayQueston(questionData):
 
 # check the ans is belongs to option or not
 def validateAnswer(useranswer,questiondata):
-    
     for questions in questionData:
-       if useranswer == questions:
+       if useranswer == questions["options"]:
           return True
-       if useranswer.isalnum:
+       if "A".upper() == "a".upper():
           return False
        else:
           return True
