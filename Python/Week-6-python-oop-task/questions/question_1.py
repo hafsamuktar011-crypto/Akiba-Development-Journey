@@ -7,12 +7,13 @@ class Student:
         self.student_id = student_id
         self.department = department
 
-
+# give every student obj it's own attribute
     def display_info(self):
         print(self.name)
         print(self.student_id)
         print(self.department)
 
+# give every student obj it's own attribute
     def introduce(self):
         print("="*50)
         print(f"my name is {self.name} 2nd year of {self.department} and my id is {self.student_id}")    
