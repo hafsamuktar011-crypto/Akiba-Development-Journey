@@ -26,11 +26,22 @@ def validateAnswer(useranswer,questiondata):
     for questions in questionData:
        if useranswer == questions:
           return True
-       return False
+       if useranswer.isalnum:
+          return False
+       else:
+          return True
        
 
 
-# def correctAnswer(questionData):
+def checkAnswer(useranswer,validated):
+      
+    for answer in validated["correct_answer"]:
+       if answer == useranswer:
+          return False
+       else:
+          return "correct answer"
+      
+   
            
 
 questionData = [
@@ -63,4 +74,5 @@ questionData = [
 ]
 
 displayQueston(questionData)
-print(validateAnswer("r","Which data type stores True or False?"))
+print(validateAnswer("r",questionData))
+print(checkAnswer("c",validateAnswer(useranswer,questionData)))

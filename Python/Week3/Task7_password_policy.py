@@ -23,7 +23,8 @@ def hasUppercaseCase(password):
         if char.isupper():
             return True
     return False
-   
+
+# function to check lower case   
 def hasLowercaseCase(password):
      for char in password:
       if char.islower():
