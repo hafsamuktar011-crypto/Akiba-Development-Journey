@@ -18,10 +18,10 @@ class Student:
         print(f"my name is {self.name} 2nd year of {self.department} and my id is {self.student_id}")    
         print("="*50)
 
-student1=Student("musa","PY-20","python")
-student2=Student("musa","CS-20","CS")
-student3=Student("musa","IT-20","IT")
+student1=Student("Isa","PY-20","python")
+student2=Student("Musa","CS-20","CS")
+student3=Student("Harun","IT-20","IT")
 
 for student in (student1,student2,student3):
-   student1.display_info()
-   student1.introduce()
+   student.display_info()
+   student.introduce()
