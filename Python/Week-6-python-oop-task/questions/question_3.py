@@ -27,5 +27,11 @@ class  Developer(Employee):
     def display_info(self):
      return f"Name: {self.name}, Salary: {self.salary}, Programming language: {self.programming_language}"    
 
-manager1=
+manager1=Manager("Zakir","4000$","IT")
+
+devolper1=Developer("Asha","234$","java")
+
+print(manager1.display_info())
+
+print(devolper1.display_info())
             
