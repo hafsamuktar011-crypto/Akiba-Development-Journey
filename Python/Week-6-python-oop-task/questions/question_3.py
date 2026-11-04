@@ -27,4 +27,5 @@ class  Developer(Employee):
     def display_info(self):
      return f"Name: {self.name}, Salary: {self.salary}, Programming language: {self.programming_language}"    
 
+manager1=
             
