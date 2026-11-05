@@ -5,6 +5,11 @@ class Dog:
 class Cat:
     def  make_sound():
         print(f"the sount of cat is miiiyaaaww")
-
-Dog.make_sound()  
+class Cow:
+    def  make_sound():
+            print(f"the sount of cow is bbooww")
+    
+Dog.make_sound()
+Cat.make_sound()
+Cow.make_sound()  
   
