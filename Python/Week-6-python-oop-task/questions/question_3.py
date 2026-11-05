@@ -13,9 +13,10 @@ class Employee:
     # create child class with extended name ,salary
 class  Manager(Employee):
     def __init__(self,name,salary,department):
+        # reuse the parent's constructor
         super().__init__(name,salary)
         self.department=department
-
+        #    override parent's method
     def display_info(self):
       return f"Name: {self.name}, Salary: {self.salary}, Department: {self.department}"    
 
