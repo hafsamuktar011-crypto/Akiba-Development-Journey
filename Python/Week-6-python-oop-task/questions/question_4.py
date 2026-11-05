@@ -1,4 +1,4 @@
-
+# polymerphism
 class Dog:
     def  make_sound():
         print(f"the sount of dog is wuuoo")
