@@ -4,7 +4,7 @@ class Dog:
         print(f"the sount of dog is woof")
 class Cat:
     def  make_sound():
-        print(f"the sount of cat is miiiyaaaww")
+        print(f"the sount of cat is meow")
 class Cow:
     def  make_sound():
             print(f"the sount of cow is bbooww")
