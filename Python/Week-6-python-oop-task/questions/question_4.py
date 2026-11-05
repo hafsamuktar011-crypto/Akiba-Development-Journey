@@ -1,4 +1,4 @@
-# polymerphism
+# polymerphism apply the hierarchical inheritance
 class Dog:
     def  make_sound():
         print(f"the sount of dog is woof")
