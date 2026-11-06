@@ -23,6 +23,16 @@ cow.make_sound()
 # part b
 
 class Shape(ABC):
+     @abstractclassmethod
+     def calculate_area(self,lenght,width,):
+         pass
+class Rectangle:
+     def calculate_area(self):
+          
+     
+
+class Circle:
+          
      
 
   
