@@ -29,6 +29,7 @@ class Shape(ABC):
 class Rectangle:
      def calculate_area(self):
           self.length=self.length
+          self.length=self.length
           
      
 
